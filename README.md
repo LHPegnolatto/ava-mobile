@@ -1,5 +1,5 @@
 <h4 align="center">
-AVA Mobile - UNIVESP
+AVA Mobile
 </h4>
 
 ---
@@ -8,6 +8,10 @@ AVA Mobile - UNIVESP
 Este projeto usa as seguintes tecnologias até o momento:
 - [Node.js](https://nodejs.org/en/)
 - [React Native](https://reactnative.dev/)
+
+### :bulb: Ideia
+
+A ideia surgiu através da dificuldade que tive em lidar com o AVA da faculdade onde estudo (UNIVESP) em dispositivos mobile.
 
 ### :triangular_ruler: Projeto
 
