@@ -1,18 +1,18 @@
 <h1 align="center">
-    <img alt="" title="" src="https://imgur.com/8AcLbrB.png">
+    <img alt="Univesp" title="Univesp" src="https://imgur.com/8AcLbrB.png">
 </h1>
 
-<h2 align="center">Aplicativo criado para fins de estudo, com o intuito de hipoteticamente ajudar alunos da Univesp a se conectarem ao AVA por dispositivos móveis de forma mais adaptada.</h2>
+<h2 align="center">Aplicativo criado para fins de estudo, com o intuito de hipoteticamente ajudar alunos da [Univesp](https://univesp.br/) a se conectarem ao AVA por dispositivos móveis de forma mais adaptada.</h2>
 
 <h3 align="center"> Sendo criado com a stack <img src="https://imgur.com/lVOav7F.png" alt="react-native" height="18"> React Native, e <img src="https://imgur.com/TuQ6I2N.png" alt="node" height="18"> Node.js</h3>
 
-<p align="center"> Usando o poder de uma stack poderosa, que utiliza de uma única linguagem popular e moderna, o <img src="https://imgur.com/qlAuJgx.png" height="18" alt="javascript"> JavaScript. <br> Produtividade e performance de forma enxuta. </p>
+<p align="center"> Usando o poder de uma stack poderosa, que utiliza de uma única linguagem popular e moderna, o <img src="https://imgur.com/qlAuJgx.png" height="18" alt="javascript"> JavaScript.</p>
 
 ---
 
-### :triangular_ruler: Projeto
+## :triangular_ruler: Projeto
 
-Este é um projeto para fins de estudos, onde irei projetar uma versão mobile do atual AVA da UNIVESP utilizando React Native e Node.js.
+Este é um projeto para fins de estudos, onde irei projetar uma versão mobile do atual AVA da [Univesp](https://univesp.br/) utilizando React Native e Node.js.
 
 ## :computer: Para rodar a aplicação
 
@@ -22,7 +22,7 @@ Este é um projeto para fins de estudos, onde irei projetar uma versão mobile d
 - Rode `npm start` na pasta api para inicilizar a API. Acesse via **localhost:3000**.
 - Rode `npm start` na pasta app e leia o QR Code que aparecerá em seu terminal pelo aplicativo do <img src="https://imgur.com/qD2XSI0.png" height="20"> [Expo](https://expo.io/) para rodar a versão mobile no seu smartphone. Ou com algum emulador Android/iOS para rodar no seu computador.
 
-### :fireworks: Como contribuir
+## :fireworks: Como contribuir
 
 - Fork esse repositório;
 - Crie uma branch com a sua feature: `git checkout -b my-feature`
