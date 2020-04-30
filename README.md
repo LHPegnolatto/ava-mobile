@@ -2,7 +2,7 @@
     <img alt="" title="" src="https://imgur.com/8AcLbrB.png">
 </h1>
 
-<h2 align="center"> Ideia de aplicativo com o intuito de ajudar alunos da Univesp a se conectarem ao AVA por dispositivos móveis de forma mais adaptada. </h2>
+<h2 align="center">Aplicativo criado para fins de estudo, com o intuito de hipoteticamente ajudar alunos da Univesp a se conectarem ao AVA por dispositivos móveis de forma mais adaptada.</h2>
 
 <h3 align="center"> Sendo criado com a stack <img src="https://imgur.com/lVOav7F.png" alt="react-native" height="18"> React Native, e <img src="https://imgur.com/TuQ6I2N.png" alt="node" height="18"> Node.js</h3>
 
