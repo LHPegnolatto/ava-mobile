@@ -1,7 +1,7 @@
 <h1 align="center">
     <img alt="Univesp" title="Univesp" src="https://imgur.com/8AcLbrB.png">
 </h1>
-<h2 align="center">Aplicativo criado para fins de estudo, com o intuito de hipoteticamente ajudar alunos da Univesp a se conectarem ao AVA por dispositivos móveis de forma mais adaptada.</h2>
+<h2 align="center">Aplicativo criado para fins de estudo, com o intuito de hipoteticamente ajudar alunos da Univesp a se conectarem ao AVA por dispositivos móveis de forma melhor adaptada.</h2>
 
 <h3 align="center"> Sendo criado com a stack <img src="https://imgur.com/lVOav7F.png" alt="react-native" height="18"> React Native, e <img src="https://imgur.com/TuQ6I2N.png" alt="node" height="18"> Node.js</h3>
 
@@ -11,14 +11,14 @@
 
 ## :triangular_ruler: Projeto
 
-Este é um projeto para fins de estudos, onde irei projetar uma versão mobile do atual AVA da [Univesp](https://univesp.br/) utilizando React Native e Node.js.
+Este é um projeto para fins de estudo, onde irei desenvolver uma versão mobile do atual AVA da [Univesp](https://univesp.br/) utilizando React Native e Node.js.
 
 ## :computer: Para rodar a aplicação
 
 > OBS: pode-se utilizar o gerenciador de pacotes npm ou o yarn para rodar os comandos abaixo
 
 - Execute `npm install` nas pastas app e api para instalar as dependências.
-- Rode `npm start` na pasta api para inicilizar a API. Acesse via **localhost:3000**.
+- Rode `npm start` na pasta api para inicializar a API. Acesse via **localhost:3000**.
 - Rode `npm start` na pasta app e leia o QR Code que aparecerá em seu terminal pelo aplicativo do <img src="https://imgur.com/qD2XSI0.png" height="20"> [Expo](https://expo.io/) para rodar a versão mobile no seu smartphone. Ou com algum emulador Android/iOS para rodar no seu computador.
 
 ## :fireworks: Como contribuir
