@@ -15,9 +15,9 @@ export default function Login() {
 
           <View style={styles.form}>
             <Text style={styles.inputTitle}>Email</Text>
-            <TextInput style={styles.formInput} value='0000000@aluno.univesp.br'/>
+            <TextInput style={styles.formInput}/>
             <Text style={styles.inputTitle}>Senha</Text>
-            <TextInput style={styles.formInput} value='************'/>
+            <TextInput style={styles.formInput}/>
           </View>
 
           <TouchableOpacity style={styles.loginButton}>
