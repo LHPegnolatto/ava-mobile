@@ -18,7 +18,7 @@ Este é um projeto para fins de estudo, onde irei desenvolver uma versão mobile
 
 - Execute `npm install` nas pastas app e api para instalar as dependências.
 - Rode `npm start` na pasta api para inicializar a API. Acesse via **localhost:3000**.
-- Rode `npm start` na pasta app e leia o QR Code que aparecerá em seu terminal pelo aplicativo do <img src="https://imgur.com/qD2XSI0.png" height="18" widht="18"> [Expo](https://expo.io/) para rodar a versão mobile no seu smartphone. Ou com algum emulador Android/iOS para rodar no seu computador.
+- Rode `npm start` na pasta app e leia o QR Code que aparecerá em seu terminal pelo aplicativo do [Expo](https://expo.io/) para rodar a versão mobile no seu smartphone. Ou com algum emulador Android/iOS para rodar no seu computador.
 
 ### :fireworks: Como contribuir
 
