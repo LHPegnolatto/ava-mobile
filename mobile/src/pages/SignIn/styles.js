@@ -10,15 +10,14 @@ export const Container  = styled.View`
 export const Card = styled.View`
   margin: 0 20px;
   align-self: stretch;
-  height: 330px;
   background-color: #ffffff;
 `;
 
 export const LogoSou = styled.Image`
   align-self: center;
-  height: 70px;
-  width: 70px;
-  margin-top: -35px;
+  height: 100px;
+  width: 100px;
+  margin-top: -50px;
 `;
 
 export const LoginForm = styled.View`

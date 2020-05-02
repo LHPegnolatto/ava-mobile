@@ -1,16 +1,23 @@
 import React from 'react';
-import { useNavigation } from '@react-navigation/native';
+import {useNavigation} from '@react-navigation/native';
+import { useAuth } from '../../contexts/auth';
 
 import { PasswordTextInput } from '../../components';
 import { Container, Card, LogoSou, RedTitle, BlackTitle, LoginForm, InputTitle, EmailInput, FormActions, RecoveryButton, RecoveryButtonText, LoginButton, LoginButtonText } from './styles';
 
 import LogoAsset from '../../assets/logo-sou.png';
 
-export default function Login() {
+export default function SignIn() {
   const navigation = useNavigation();
 
   function navigateToPasswordRecovery () {
     navigation.navigate('PasswordRecovery');
+  }
+
+  const { signIn } = useAuth();
+
+  function handleSignIn () {
+    signIn();
   }
 
   return (
@@ -24,7 +31,7 @@ export default function Login() {
         <LoginForm>
           <InputTitle>Digite seu e-mail UNIVESP</InputTitle>
           <EmailInput selectionColor='#fca9ac' keyboardType='email-address' />
-          <InputTitle>Digite sua senha</InputTitle>
+          <InputTitle style={{marginTop: 10}}>Digite sua senha</InputTitle>
           <PasswordTextInput selectionColor='#fca9ac' />
 
           <FormActions>
@@ -32,7 +39,7 @@ export default function Login() {
               <RecoveryButtonText>Esqueci a senha / Primeiro acesso</RecoveryButtonText>
             </RecoveryButton>
 
-            <LoginButton>
+            <LoginButton onPress={handleSignIn}>
               <LoginButtonText>ENTRAR</LoginButtonText>
             </LoginButton>
           </FormActions>
