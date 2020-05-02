@@ -1,6 +1,7 @@
-<h1 align="center">
+###<h1 align="center">
     AVA Mobile :books:
 </h1>
+
 <h2 align="center">Aplicativo criado para fins de estudo, com o intuito de hipoteticamente ajudar alunos da Univesp a se conectarem ao AVA por dispositivos móveis de forma melhor adaptada.</h2>
 
 <h3 align="center"> Sendo criado com a stack React Native, e Node.js</h3>
