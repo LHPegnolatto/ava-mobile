@@ -1,11 +1,11 @@
 <h1 align="center">
-    <img alt="Univesp" title="Univesp" src="https://imgur.com/8AcLbrB.png">
+    AVA Mobile :books:
 </h1>
 <h2 align="center">Aplicativo criado para fins de estudo, com o intuito de hipoteticamente ajudar alunos da Univesp a se conectarem ao AVA por dispositivos móveis de forma melhor adaptada.</h2>
 
-<h3 align="center"> Sendo criado com a stack <img src="https://imgur.com/lVOav7F.png" alt="react-native" height="18" widht="18"> React Native, e <img src="https://imgur.com/TuQ6I2N.png" alt="node" height="18" widht="18"> Node.js</h3>
+<h3 align="center"> Sendo criado com a stack React Native, e Node.js</h3>
 
-<p align="center"> Usando o poder de uma stack poderosa, que utiliza de uma única linguagem popular e moderna, o <img src="https://imgur.com/qlAuJgx.png" height="18" alt="javascript"> JavaScript.</p>
+<p align="center"> Usando o poder de uma stack poderosa, que utiliza de uma única linguagem popular e moderna, o JavaScript.</p>
 
 ---
 
