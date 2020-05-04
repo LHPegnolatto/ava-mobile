@@ -16,7 +16,7 @@ Este é um projeto para fins de estudo, onde irei desenvolver uma versão mobile
 
 > OBS: pode-se utilizar o gerenciador de pacotes npm ou o yarn para rodar os comandos abaixo
 
-- Execute `npm install` nas pastas app e api para instalar as dependências.
+- Execute `npm install` nas pastas backend e mobile para instalar as dependências.
 - Rode `npm start` na pasta api para inicializar a API. Acesse via **localhost:3000**.
 - Rode `npm start` na pasta app e leia o QR Code que aparecerá em seu terminal pelo aplicativo do [Expo](https://expo.io/) para rodar a versão mobile no seu smartphone. Ou com algum emulador Android/iOS para rodar no seu computador.
 
