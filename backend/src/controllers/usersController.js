@@ -3,17 +3,28 @@ const connection = require('../database/connection');
 const bcrypt = require('bcryptjs');
 
 module.exports = {
-    async create(request, response) {
-        const { name, email, password } = request.body;
+    async register(req, res) {
+      const { name, email, password } = req.body;
 
-        const passwordHash = await bcrypt.hash(password, 10);
+      const existingUser = await connection('users').where({
+        email: email
+      })
+      .first();
 
-        const [id] = await connection('users').insert({
-          name: name,
-          email: email,
-          password: passwordHash
-        });
+      if (existingUser)
+        return res.status(400).json({ error: 'User already exists' });
 
-        return response.json({id});
+      const passwordHash = await bcrypt.hash(password, 10);
+
+      const [id] = await connection('users').insert({
+        name: name,
+        email: email,
+        password: passwordHash
+      });
+
+      if(!id)
+        return res.status(400).json({ error: 'Registration failed' });
+
+      return res.json({});
     }
 };
