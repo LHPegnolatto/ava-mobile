@@ -17,7 +17,8 @@ Este é um projeto para fins de estudo, onde irei desenvolver uma versão mobile
 > OBS: pode-se utilizar o gerenciador de pacotes npm ou o yarn para rodar os comandos abaixo
 
 - Execute `npm install` nas pastas backend e mobile para instalar as dependências.
-- Rode `npm start` na pasta backend para inicializar a API. Acesse via **localhost:3000**.
+- Execute `npx knex migrate:latest` na pasta backend para criar ou atualizar o banco de dados.
+- Rode `npm start` na pasta backend para inicializar a API. Acesse via **localhost:3333**.
 - Rode `npm start` na pasta mobile e leia o QR Code que aparecerá em seu terminal pelo aplicativo do [Expo](https://expo.io/) para rodar a versão mobile no seu smartphone. Ou com algum emulador Android/iOS para rodar no seu computador.
 
 ### :stars: Como contribuir
