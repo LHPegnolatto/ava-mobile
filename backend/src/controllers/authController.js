@@ -24,6 +24,6 @@ module.exports = {
           expiresIn: 86400,
         });
 
-        return res.json({ auth: true, token: token });
+        return res.json({ auth: true, token: token, email: email });
     }
 };

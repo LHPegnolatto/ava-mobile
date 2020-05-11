@@ -1,5 +1,5 @@
-import React from 'react';
-import {useNavigation} from '@react-navigation/native';
+import React, { useState } from 'react';
+import { useNavigation } from '@react-navigation/native';
 import { useAuth } from '../../contexts/auth';
 
 import { PasswordTextInput } from '../../components';
@@ -8,6 +8,9 @@ import { Container, Card, LogoSou, RedTitle, BlackTitle, LoginForm, InputTitle, 
 import LogoAsset from '../../assets/logo-sou.png';
 
 export default function SignIn() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
   const navigation = useNavigation();
 
   function navigateToPasswordRecovery () {
@@ -17,7 +20,7 @@ export default function SignIn() {
   const { signIn } = useAuth();
 
   function handleSignIn () {
-    signIn();
+    signIn(email, password);
   }
 
   return (
@@ -30,9 +33,9 @@ export default function SignIn() {
 
         <LoginForm>
           <InputTitle>Digite seu e-mail UNIVESP</InputTitle>
-          <EmailInput selectionColor='#fca9ac' keyboardType='email-address' />
+          <EmailInput selectionColor='#fca9ac' keyboardType='email-address' onChange={e => setEmail(e.nativeEvent.text)}/>
           <InputTitle style={{marginTop: 10}}>Digite sua senha</InputTitle>
-          <PasswordTextInput selectionColor='#fca9ac' />
+          <PasswordTextInput selectionColor='#fca9ac' onChange={e => setPassword(e.nativeEvent.text)}/>
 
           <FormActions>
             <RecoveryButton onPress={navigateToPasswordRecovery}>

@@ -1,20 +1,20 @@
 import React, { createContext, useState, useEffect, useContext } from 'react';
 import { SplashScreen } from 'expo';
 import { AsyncStorage } from 'react-native';
-import * as auth from '../services/auth';
+import api from '../services/api';
 
-const AuthContext = createContext({signed: false, user: {}})
+const AuthContext = createContext({signed: false, email: {}})
 
 export function AuthProvider ({ children }) {
-  const [user, setUser] = useState(null);
+  const [email, setEmail] = useState(null);
 
   useEffect(() => {
     async function loadStoragedData () {
-      const storagedUser = await AsyncStorage.getItem('@AVAMobile:user');
+      const storagedEmail = await AsyncStorage.getItem('@AVAMobile:email');
       const storagedToken = await AsyncStorage.getItem('@AVAMobile:token');
 
-      if (storagedUser && storagedToken) {
-        setUser(JSON.parse(storagedUser));
+      if (storagedEmail && storagedToken) {
+        setEmail(JSON.parse(storagedEmail));
       }
 
       SplashScreen.hide();
@@ -23,23 +23,30 @@ export function AuthProvider ({ children }) {
     loadStoragedData();
   }, []);
 
-  async function signIn () {
-    const response = await auth.signIn();
+  async function signIn (email, password) {
+    const response = await api.post('/auth/authenticate', {
+      email: email,
+      password: password
+    });
 
-    setUser(response.user);
+    const data = response.data
 
-    await AsyncStorage.setItem('@AVAMobile:user', JSON.stringify(response.user));
-    await AsyncStorage.setItem('@AVAMobile:token', response.token);
+    if (data.auth) {
+      setEmail(data.email);
+
+      await AsyncStorage.setItem('@AVAMobile:email', JSON.stringify(data.email));
+      await AsyncStorage.setItem('@AVAMobile:token', data.token);
+    }
   }
 
   function signOut () {
     AsyncStorage.clear().then(() => {
-      setUser(null);
+      setEmail(null);
     });
   }
 
   return (
-    <AuthContext.Provider value={{signed: !!user, user, signIn, signOut}}>
+    <AuthContext.Provider value={{signed: !!email, email, signIn, signOut}}>
       {children}
     </AuthContext.Provider>
   );
